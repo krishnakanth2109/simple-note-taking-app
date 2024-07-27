@@ -1,0 +1,13 @@
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search notes..." />
+<ul>
+  <li *ngFor="let note of filteredNotes()">
+    <h3>{{ note.title }}</h3>
+    <p>{{ note.content }}</p>
+    <p>{{ note.timestamp }}</p>
+    <button (click)="editNote.emit(note)">Edit</button>
+    <button (click)="deleteNote.emit(note.id)">Delete</button>
+  </li>
+</ul>
+<div>
+  <button *ngFor="let page of pages()" (click)="setPage(page)">{{ page }}</button>
+</div>

@@ -1,0 +1,6 @@
+<form (submit)="onSubmit()">
+    <input type="text" [(ngModel)]="note.title" name="title" placeholder="Title" required />
+    <textarea [(ngModel)]="note.content" name="content" placeholder="Content" required></textarea>
+    <button type="submit">Save</button>
+  </form>
+  

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add styles in src/styles.css */
+form, ul {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 10px;
+    margin-right: 5px;
+  }
+  li {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  @media (max-width: 600px) {
+    form, ul {
+      width: 90%;
+    }
+  }
+  

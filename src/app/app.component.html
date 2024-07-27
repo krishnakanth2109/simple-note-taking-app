@@ -1,0 +1,2 @@
+<app-note-form [currentNote]="currentNote" (saveNote)="addOrEditNote($event)"></app-note-form>
+<app-note-list [notes]="notes" (editNote)="editNote($event)" (deleteNote)="deleteNote($event)"></app-note-list>
