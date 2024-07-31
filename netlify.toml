@@ -1,0 +1,9 @@
+[build]
+base = "simple-note-taking-app"
+command ="ng run build:prod"
+publish ="dist/browser"
+
+[[redirects]]
+from = "/*"
+to ="/index.html"
+status = 200
